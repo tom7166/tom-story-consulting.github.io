@@ -1,36 +1,37 @@
-# Tom Story Consulting | Digital Solutions - Buffalo, NY
+# StoryTom Website Documentation
 
-## Digital Marketing & DevOps Excellence
+## Overview
+Modern React website for StoryTom Digital Solutions featuring Digital Marketing and DevOps services.
 
-Expert Digital Marketing and DevOps solutions delivering proven results. Transform your business with our data-driven strategies and technical excellence.
+## Security Features
+- Intrusion Detection
+- Rate Limiting
+- SSL/TLS Configuration
+- CORS Protection
+- XSS Prevention
+- CSRF Protection
+- Security Headers
 
-### Core Services
+## Development
+1. Clone repository
+2. Install dependencies: `npm install`
+3. Start development server: `npm start`
 
-- **Digital Marketing & SEO**
-  - Advanced ranking strategies
-  - Content optimization
-  - Data-driven keyword research
+## Deployment
+1. Run build: `npm run build`
+2. Deploy: `npm run deploy`
 
-- **DevOps Excellence**
-  - CI/CD Pipeline implementation
-  - Cloud infrastructure optimization
-  - Automated deployment solutions
+## Security Protocols
+1. Regular backups
+2. Rate limiting
+3. Error logging
+4. Performance monitoring
 
-- **Analytics & Performance**
-  - Strategic campaign management
-  - Analytics & Reporting
-  - ROI optimization
+## Maintenance
+- Regular security audits
+- Performance monitoring
+- Error tracking
+- Analytics review
 
-### Our Impact
-
-- 97% Client Retention Rate
-- 450+ Successful Projects
-- $2.4M+ Revenue Generated
-
-### Contact
-
-- Email: Thomasstory716@hotmail.com.com
-- Location: Buffalo, NY
-- Website: [storytom.com](https://storytom.com)
-
-© 2025 StoryTom Digital Solutions. All rights reserved.
+## Contact
+Email: ThomasStory716@hotmail.com

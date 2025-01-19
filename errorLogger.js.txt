@@ -1,0 +1,26 @@
+export const errorLogger = {
+  init: () => {
+    window.onerror = (msg, url, lineNo, columnNo, error) => {
+      const errorData = {
+        message: msg,
+        url: url,
+        line: lineNo,
+        column: columnNo,
+        error: error?.stack,
+        userAgent: navigator.userAgent,
+        timestamp: new Date().toISOString()
+      };
+
+      // Log to secure endpoint
+      fetch('/api/log-error', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(errorData)
+      });
+
+      return false;
+    };
+  }
+};

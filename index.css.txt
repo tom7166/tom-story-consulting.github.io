@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Gradient backgrounds */
+.gradient-header {
+  background: linear-gradient(to right, #1e3a8a, #1e40af);
+}
+
+.gradient-hero {
+  background: linear-gradient(to bottom, #1e3a8a, #1e40af);
+}
+
+/* Button styles */
+.cta-button {
+  background-color: #f97316;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ea580c;
+}
+
+/* Animation classes */
+.hover-scale {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
