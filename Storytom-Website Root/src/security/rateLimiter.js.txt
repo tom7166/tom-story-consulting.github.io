@@ -1,0 +1,19 @@
+export const rateLimiter = {
+  requests: new Map(),
+  
+  check: (ip, limit = 100, window = 60000) => {
+    const now = Date.now();
+    const userRequests = this.requests.get(ip) || [];
+    
+    // Clean old requests
+    const recentRequests = userRequests.filter(time => time > now - window);
+    
+    if (recentRequests.length >= limit) {
+      return false;
+    }
+    
+    recentRequests.push(now);
+    this.requests.set(ip, recentRequests);
+    return true;
+  }
+};

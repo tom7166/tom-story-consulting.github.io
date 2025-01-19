@@ -1,0 +1,15 @@
+const fs = require('fs');
+const path = require('path');
+const imagemin = require('imagemin');
+const imageminMozjpeg = require('imagemin-mozjpeg');
+const imageminPngquant = require('imagemin-pngquant');
+
+(async () => {
+    await imagemin(['src/images/*.{jpg,png}'], {
+        destination: 'src/images/optimized',
+        plugins: [
+            imageminMozjpeg({ quality: 80 }),
+            imageminPngquant({ quality: [0.6, 0.8] })
+        ]
+    });
+})();
