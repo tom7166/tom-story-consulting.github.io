@@ -1,0 +1,194 @@
+/* Base Tailwind Imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Variables */
+:root {
+  --primary-blue: #1e40af;
+  --primary-orange: #f97316;
+  --gradient-start: #1e3a8a;
+  --gradient-end: #1e40af;
+}
+
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Classes */
+.gradient-header {
+  background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+}
+
+.gradient-hero {
+  background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
+}
+
+/* Button Styles */
+.btn-primary {
+  @apply bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full transition-all duration-300;
+}
+
+.btn-secondary {
+  @apply border-2 border-white hover:bg-white hover:text-blue-900 text-white px-6 py-3 rounded-full transition-all duration-300;
+}
+
+/* Card Styles */
+.service-card {
+  @apply bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300;
+}
+
+/* Animation Classes */
+.hover-scale {
+  transition: transform 0.2s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Section Spacing */
+.section-padding {
+  @apply py-20;
+}
+
+/* Container */
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Typography */
+h1 {
+  @apply text-5xl md:text-6xl font-bold;
+}
+
+h2 {
+  @apply text-4xl font-bold mb-4;
+}
+
+h3 {
+  @apply text-2xl font-bold mb-3;
+}
+
+p {
+  @apply text-gray-600;
+}
+
+/* Navigation */
+.nav-link {
+  @apply text-white hover:text-orange-400 transition-colors;
+}
+
+/* Form Elements */
+.form-input {
+  @apply w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+}
+
+.form-label {
+  @apply block text-gray-700 mb-2;
+}
+
+/* Footer */
+.footer-link {
+  @apply text-gray-400 hover:text-orange-400 transition-colors;
+}
+
+/* Icons */
+.icon-circle {
+  @apply rounded-full bg-blue-100 w-16 h-16 flex items-center justify-center mb-6;
+}
+
+/* Stats */
+.stat-card {
+  @apply text-center p-8 bg-white rounded-lg shadow-xl;
+}
+
+.stat-number {
+  @apply text-4xl font-bold text-blue-900 mb-2;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  @apply fixed inset-0 bg-blue-900 bg-opacity-95 z-50 transform transition-transform duration-300;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    @apply px-4;
+  }
+  
+  h1 {
+    @apply text-4xl;
+  }
+  
+  .btn-primary, .btn-secondary {
+    @apply w-full;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Security Elements */
+.security-wrapper {
+  isolation: isolate;
+  position: relative;
+}
+
+/* Loading States */
+.loading {
+  @apply animate-pulse bg-gray-200;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-blue);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-orange);
+}
