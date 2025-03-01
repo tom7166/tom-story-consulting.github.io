@@ -29,7 +29,7 @@ Expert Digital Marketing and DevOps solutions delivering proven results. Transfo
 
 ### Contact
 
-- Email: Thomasstory716@hotmail.com.com
+- Email: Tom@aaronmichaelservices.com
 - Location: Buffalo, NY
 - Website: [storytom.com](https://storytom.com)
 
