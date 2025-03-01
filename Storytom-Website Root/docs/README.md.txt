@@ -34,4 +34,4 @@ Modern React website for StoryTom Digital Solutions featuring Digital Marketing 
 - Analytics review
 
 ## Contact
-Email: ThomasStory716@hotmail.com
+Email: Tom@aaronmichaelservices.com
